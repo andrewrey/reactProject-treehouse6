@@ -3,7 +3,6 @@ import Axios from "axios";
 import "./App.css";
 import SearchForm from "./Components/SearchForm";
 import GifList from "./Components/GifList";
-const dotenv = require("dotenv").config();
 
 const App = () => {
   const [data, setData] = useState([]);
