@@ -14,7 +14,6 @@ const App = () => {
   };
 
   useEffect(() => {
-    console.log("hahah", process.env.REACT_APP_GIF_API);
     Axios.get(`http://api.giphy.com/v1/gifs/search?api_key=${process.env.REACT_APP_GIF_API}&q=${query}`)
       .then((response) => setData(response.data.data))
       .catch((error) => console.log("Error fetching and parsing data...", error))
